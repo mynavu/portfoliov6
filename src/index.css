@@ -6,7 +6,7 @@ body {
 
 body,
 html {
-  font-family: Consolas, monospace;
+  font-family: monospace;
 
   color: white;
   font-weight: 800;
@@ -316,7 +316,7 @@ a {
 @media (max-width: 900px) {
   body,
   html {
-    font-family: Consolas, monospace;
+    font-family: monospace;
 
     color: white;
     font-weight: 800;
@@ -342,7 +342,7 @@ a {
 @media (max-width: 400px) {
   body,
   html {
-    font-family: Consolas, monospace;
+    font-family: monospace;
 
     color: white;
     font-weight: 800;
