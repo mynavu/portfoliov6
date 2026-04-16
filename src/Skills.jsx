@@ -7,10 +7,9 @@ export const Skills = () => {
     if (contentRef.current) {
       contentRef.current.innerHTML = `
 <pre class="">
-╔═══════════════════════════════════════════════════════════════════════╗
 
 
-<div class="flex flex-col items-center whitespace-pre-wrap  font-mono smallest gap-5 ">
+<div class="flex flex-col items-center whitespace-pre-wrap text-center smallest gap-5">
 
 
     <div>Languages: <span class="yellow">Javascript</span>, <span class="d-blue">Python</span>, <span class="blue">SQl</span>, <span class="orange">HTML</span>, <span class="purple">CSS</span>, <span class="red">Java</span>, <span class="d-blue">TypeScript</span></div> 
@@ -22,17 +21,20 @@ export const Skills = () => {
     <div>Creative: <span class="blue">Photoshop</span>, <span class="yellow">Illustrator</span>, <span class="teal">MAYA</span>, <span class="purple">Canva</span>, <span class="red">Figma</span>, <span class="green">Affinity</span></div>
 
     </div>
-
-╚══════════════════════════════════════════════════════════════════════╝
-
   </pre>
           `;
     }
   }, []);
 
   return (
-    <div className="small banner flex flex-col items-center">
+    <div className="smallest banner flex flex-col items-center">
+      <pre>
+        {`╔═══════════════════════════════════════════════════════════════════════╗`}
+      </pre>
       <div ref={contentRef}></div>
+      <pre>
+        {`╚══════════════════════════════════════════════════════════════════════╝`}
+      </pre>
     </div>
   );
 };

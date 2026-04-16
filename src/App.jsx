@@ -120,7 +120,7 @@ function App() {
         />
       </div>
 
-      <div className="main relative flex flex-col items-center min-h-screen">
+      <div className="main flex flex-col items-center min-h-screen">
         <div className="fixed inset-0 -z-10 ">
           <Shader className="w-full h-full">
             <Aurora
@@ -129,7 +129,7 @@ function App() {
               colorB="#31236e"
               colorC="#8844b3"
             />
-            <Ascii characters="*" cellSize={22} fontFamily="Nova Mono">
+            <Ascii characters="*" cellSize={19} fontFamily="Nova Mono">
               <CursorTrail radius={0.2} id="myMask" />
             </Ascii>
             <Dither blendMode="overlay" pixelSize={3} />
@@ -246,8 +246,8 @@ function App() {
         {pageState === "skills" && <Skills />}
         {pageState === "other" && <Other />}
         {pageState === null && (
-          <div className="small flex flex-col items-center fade4">
-            <pre className="whitespace-pre-wrap break-all font-mono">
+          <div className="flex flex-col items-center fade4">
+            <pre className="whitespace-pre-wrap break-all">
               {`╔══════════════════════════════════════════════════════════════════════╗`}
             </pre>
 
@@ -262,7 +262,7 @@ function App() {
 
             <p className="my-1">&nbsp;</p>
 
-            <pre className="whitespace-pre-wrap break-all font-mono">
+            <pre className="whitespace-pre-wrap break-all">
               {`╚══════════════════════════════════════════════════════════════════════╝`}
             </pre>
           </div>

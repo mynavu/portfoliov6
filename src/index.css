@@ -10,7 +10,7 @@ html {
 
   color: white;
   font-weight: 800;
-  font-size: 11px;
+  font-size: 0.8vw;
   line-height: 1.2;
 }
 
@@ -298,21 +298,69 @@ a {
   cursor: pointer;
 }
 
-@media (max-width: 800px) {
-  body {
-    font-size: 6px;
+.main {
+  width: 48vw;
+  margin: auto;
+  padding: 0;
+}
+
+.small {
+  width: 48vw;
+}
+
+.smallest {
+  width: 35vw;
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  body,
+  html {
+    font-family: Consolas, monospace;
+
+    color: white;
+    font-weight: 800;
+    font-size: 1.2vw;
+    line-height: 1.2;
+  }
+  .main {
+    width: 72vw;
+    margin: auto;
+    padding: 0;
   }
 
   .small {
-    width: 265px;
+    width: 72vw;
   }
 
   .smallest {
-    width: 230px;
+    width: 52vw;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+  body,
+  html {
+    font-family: Consolas, monospace;
+
+    color: white;
+    font-weight: 800;
+    font-size: 1.5vw;
+    line-height: 1.2;
+  }
+  .main {
+    width: 90vw;
+    margin: auto;
+    padding: 0;
   }
 
-  .main {
-    width: 370px;
-    margin: auto;
+  .small {
+    width: 90vw;
+  }
+
+  .smallest {
+    width: 65vw;
+    margin: 0 auto;
   }
 }

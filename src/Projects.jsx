@@ -1,42 +1,8 @@
 import { useRef, useEffect } from "react";
 
 export const Projects = () => {
-  const contentRef = useRef(null);
-
-  useEffect(() => {
-    if (contentRef.current) {
-      contentRef.current.innerHTML = `
-<pre>
-╭──────────────────────────────────────────────────╮
-
-<span class="green">◆ Completed</span> <span class="yellow">◆ Developing</span> <span class="blue">◆ Paused</span> <span class="red">◆ Archived</span>
-
-<span class="green">◆ Summarizzler</span> - Gemini API, Javascript
-↳ A geotagging app
-
-<span class="yellow">◆ Golden Ratio Experiment</span> - PsychoPy
-↳ A geotagging app
-
-<span class="yellow">◆ WhoIzIt?</span> - React.js, Tailwind CSS
-↳ A geotagging app
-
-<span class="blue">◆ RedTakes</span> - Javascript, Supabase
-↳ A geotagging app
-
-<span class="green">◆ Globit</span> - Javascript, Supabase
-↳ A geotagging app
-
-View more projects in my Gitub.
-
-╰──────────────────────────────────────────────────╯
-
-  </pre>
-          `;
-    }
-  }, []);
-
   return (
-    <div className="small banner flex flex-col items-center">
+    <div className="small banner flex flex-col items-center justify-center">
       <pre>
         {`╔═══════════════════════════════════════════════════════════════════════╗`}
       </pre>
