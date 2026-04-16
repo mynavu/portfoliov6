@@ -27,9 +27,9 @@ E-mail
   return (
     <div className="small banner flex flex-col items-center" ref={contentRef}>
       <pre>
-        {`╭──────────────────────────────────────────────────────────────────────╮`}
+        {`╔═══════════════════════════════════════════════════════════════════════╗`}
       </pre>
-      <div className="smallest flex flex-col banner">
+      <div className=" flex flex-col banner">
         <p>&nbsp;</p>
         <p className="big">&nbsp;&nbsp;⛅</p>
         <a className="group red" href="./Resume_2026.pdf" target="_blank">
@@ -63,17 +63,17 @@ E-mail
         <a
           className="group purple"
           onClick={() => {
-            alert("please be serious");
+            alert("grow up");
           }}
         >
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <span className="group-hover:hidden">⬦</span>
-          <span className="hidden group-hover:inline">⬥</span> Roblox
+          <span className="hidden group-hover:inline">⬥</span> Surprise me :3
         </a>
         <p>&nbsp;</p>
       </div>
       <pre>
-        {`╰──────────────────────────────────────────────────────────────────────╯`}
+        {`╚══════════════════════════════════════════════════════════════════════╝`}
       </pre>
     </div>
   );

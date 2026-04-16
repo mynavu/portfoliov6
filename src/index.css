@@ -1,19 +1,141 @@
 @import "tailwindcss";
 
 body {
-  background: #191724;
+  background: #241a37;
 }
 
-body, html {
-  font-family: "DM Mono", monospace;
+body,
+html {
+  font-family: Consolas, monospace;
+
   color: white;
   font-weight: 800;
   font-size: 11px;
-  padding-bottom: 20px;
+  line-height: 1.2;
 }
 
-* {
-  font-family: "DM Mono", monospace;
+.shine {
+  color: white;
+}
+
+.sleep {
+  color: rgb(163, 186, 255);
+}
+
+.box {
+  color: #b4acdd;
+}
+
+.blossom {
+  color: #ffcdf2;
+}
+
+.tree {
+  color: #fce5cd;
+}
+
+.owl {
+  color: rgb(212, 212, 212);
+}
+
+.owl-feet {
+  color: rgb(127, 127, 127);
+}
+
+.owl-eyes {
+  color: yellow;
+}
+
+.owl-nose {
+  color: rgb(127, 127, 127);
+}
+
+.name1 {
+  color: #674ea7;
+}
+
+.name2 {
+  color: #775fb6;
+}
+
+.name3 {
+  color: #8e7cc3;
+}
+
+.name4 {
+  color: #a48ee2;
+}
+
+.name5 {
+  color: #b4a7d6;
+}
+
+.shadow {
+  color: white;
+}
+
+.grass {
+  color: rgb(213, 255, 176);
+}
+
+.duck {
+  color: rgb(255, 255, 175);
+}
+
+.duck-mouth {
+  color: rgb(255, 188, 101);
+}
+
+.duck-eyes {
+  color: rgb(162, 222, 255);
+}
+
+.water {
+  color: #9fe5ff;
+}
+
+.copyright {
+  color: white;
+}
+
+.dog {
+  color: rgb(255, 227, 189);
+}
+
+.dog-eyes {
+  color: rgb(199, 255, 169);
+}
+
+.dog-nose {
+  color: rgb(255, 218, 150);
+}
+
+.dog-mouth {
+  color: rgb(255, 218, 150);
+}
+
+.dog-tongue {
+  color: rgb(255, 118, 118);
+}
+
+.flower1 {
+  color: rgb(255, 213, 245);
+}
+
+.flower2 {
+  color: #f9cb9c;
+}
+
+.flower3 {
+  color: #97caff;
+}
+
+.flower4 {
+  color: rgb(255, 181, 228);
+}
+
+.flower5 {
+  color: rgb(251, 143, 251);
 }
 
 .glow-red {
@@ -30,16 +152,21 @@ body, html {
 
 .l-black {
   color: #b4acdd;
-
 }
 
 .typewriter::after {
-  content: '█';
+  content: "█";
 }
 
 @keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes fadeIn {
@@ -71,6 +198,11 @@ body, html {
   opacity: 0;
 }
 
+.fade4 {
+  animation: fadeIn 3.5s forwards;
+  opacity: 0;
+}
+
 .big {
   font-size: 15px;
 }
@@ -79,16 +211,14 @@ body, html {
   font-size: 60px;
 }
 
-
 .main {
-  width: 630px;
+  width: 655px;
   margin: auto;
   padding: 0;
 }
 
 .small {
   width: 480px;
-  margin: auto;
 }
 
 .smallest {
@@ -140,6 +270,10 @@ a {
   color: rgb(230, 204, 255);
 }
 
+.black {
+  color: rgb(164, 164, 164);
+}
+
 .d-blue {
   color: rgb(155, 190, 255);
 }
@@ -153,7 +287,7 @@ a {
 }
 
 .green {
-  color:rgb(213, 255, 176)
+  color: rgb(213, 255, 176);
 }
 
 .blue {
@@ -165,7 +299,6 @@ a {
 }
 
 @media (max-width: 800px) {
-
   body {
     font-size: 6px;
   }
@@ -173,7 +306,7 @@ a {
   .small {
     width: 265px;
   }
-  
+
   .smallest {
     width: 230px;
   }
