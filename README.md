@@ -1,8 +1,12 @@
 # Developer Portfolio
 
+## Deployment
+
+Visit my portfolio at: [link](https://mynavu.netlify.app/)
+
 ## About
 
-Welcome to my developer portfolio! This features a terminal theme with shader-based backgrounds and interactive UI components. The portfolio is built using React with Tailwind CSS for styling.
+Welcome to my latest developer portfolio! This features a terminal theme with shader-based backgrounds and interactive UI components. The portfolio is built using React with Tailwind CSS for styling.
 
 ## Tech Stack
 
