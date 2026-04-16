@@ -129,7 +129,7 @@ function App() {
               colorB="#31236e"
               colorC="#8844b3"
             />
-            <Ascii characters="*" cellSize={20} fontFamily="Nova Mono">
+            <Ascii characters="*" cellSize={22} fontFamily="Nova Mono">
               <CursorTrail radius={0.2} id="myMask" />
             </Ascii>
             <Dither blendMode="overlay" pixelSize={3} />
