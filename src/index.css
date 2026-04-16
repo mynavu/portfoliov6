@@ -316,8 +316,6 @@ a {
 @media (max-width: 900px) {
   body,
   html {
-    font-family: monospace;
-
     color: white;
     font-weight: 800;
     font-size: 1.2vw;
@@ -342,8 +340,6 @@ a {
 @media (max-width: 400px) {
   body,
   html {
-    font-family: monospace;
-
     color: white;
     font-weight: 800;
     font-size: 1.5vw;
