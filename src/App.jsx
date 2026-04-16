@@ -120,7 +120,7 @@ function App() {
         />
       </div>
 
-      <div className="main flex flex-col items-center min-h-screen">
+      <div className="main flex flex-col items-center min-h-screen justify-center">
         <div className="fixed inset-0 -z-10 ">
           <Shader className="w-full h-full">
             <Aurora
@@ -137,140 +137,142 @@ function App() {
         </div>
         <div className="fixed inset-0 pointer-events-none" />
 
-        <p className="mt-10 l-black self-start">Terminal &gt;_</p>
-        <p className="text-center l-black">
-          ═══════════════════════════════════════════════════════════════════════════════════════════════════
-        </p>
-        <p className="mt-10 self-start">
-          <span className="pink">visitor</span>@
-          <span className="blue">portfolio</span>:~${" "}
-          <span className="typewriter" ref={initRef}></span>
-        </p>
-        <p className="mb-3 fade1 self-start">
-          Launching portfolio v0.6 in terminal.. <br />
-        </p>
-        <div className="fade2" style={{ textAlign: "center", width: "100%" }}>
-          <div ref={topBorderRef} className="box"></div>
-          <div ref={bannerRef}></div>
-          <div ref={botBorderRef} className="box"></div>
-        </div>
-
-        <div
-          className="small fade3 flex flex-col justify-center items-center"
-          ref={navRef}
-        >
-          <pre>
-            <span className={pageState === "about" ? "yellow" : ""}>
-              ╔═══════════════╗&nbsp;
-            </span>
-            <span className={pageState === "links" ? "yellow" : ""}>
-              ╔═══════════════╗&nbsp;
-            </span>
-            <span className={pageState === "skills" ? "yellow" : ""}>
-              ╔═══════════════╗&nbsp;
-            </span>
-            <span className={pageState === "projects" ? "yellow" : ""}>
-              ╔══════════════╗&nbsp;
-            </span>
-            <span className={pageState === "other" ? "yellow" : ""}>
-              ╔══════════════╗
-            </span>
-          </pre>
-          <div>
-            <span
-              onClick={() => {
-                setPageState("about");
-              }}
-              className={`pointer ${pageState === "about" ? "yellow" : ""}`}
-            >
-              ║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;║
-            </span>
-            &nbsp;
-            <span
-              onClick={() => {
-                setPageState("links");
-              }}
-              className={`pointer ${pageState === "links" ? "yellow" : ""}`}
-            >
-              ║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Links&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;║
-            </span>
-            &nbsp;
-            <span
-              onClick={() => {
-                setPageState("skills");
-              }}
-              className={`pointer ${pageState === "skills" ? "yellow" : ""}`}
-            >
-              ║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skills&nbsp;&nbsp;&nbsp;&nbsp;║
-            </span>
-            &nbsp;
-            <span
-              onClick={() => {
-                setPageState("projects");
-              }}
-              className={`pointer ${pageState === "projects" ? "yellow" : ""}`}
-            >
-              ║&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;║
-            </span>
-            &nbsp;
-            <span
-              onClick={() => {
-                setPageState("other");
-              }}
-              className={`pointer ${pageState === "other" ? "yellow" : ""}`}
-            >
-              ║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MaaS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;║
-            </span>
+        <div>
+          <p className="mt-10 l-black self-start">Terminal &gt;_</p>
+          <p className="text-center l-black">
+            ═══════════════════════════════════════════════════════════════════════════════════════════════════
+          </p>
+          <p className="mt-10 self-start">
+            <span className="pink">visitor</span>@
+            <span className="blue">portfolio</span>:~${" "}
+            <span className="typewriter" ref={initRef}></span>
+          </p>
+          <p className="mb-3 fade1 self-start">
+            Launching portfolio v0.6 in terminal.. <br />
+          </p>
+          <div className="fade2" style={{ textAlign: "center", width: "100%" }}>
+            <div ref={topBorderRef} className="box"></div>
+            <div ref={bannerRef}></div>
+            <div ref={botBorderRef} className="box"></div>
           </div>
-          <pre>
-            <span className={pageState === "about" ? "yellow" : ""}>
-              ╚═══════════════╝&nbsp;
-            </span>
-            <span className={pageState === "links" ? "yellow" : ""}>
-              ╚═══════════════╝&nbsp;
-            </span>
-            <span className={pageState === "skills" ? "yellow" : ""}>
-              ╚═══════════════╝&nbsp;
-            </span>
-            <span className={pageState === "projects" ? "yellow" : ""}>
-              ╚══════════════╝&nbsp;
-            </span>
-            <span className={pageState === "other" ? "yellow" : ""}>
-              ╚══════════════╝
-            </span>
-          </pre>
-        </div>
-        {pageState === "about" && <About />}
-        {pageState === "links" && <Links />}
-        {pageState === "projects" && <Projects />}
-        {pageState === "skills" && <Skills />}
-        {pageState === "other" && <Other />}
-        {pageState === null && (
-          <div className="flex flex-col items-center fade4">
-            <pre className="whitespace-pre-wrap break-all">
-              {`╔══════════════════════════════════════════════════════════════════════╗`}
+
+          <div
+            className="small fade3 flex flex-col justify-center items-center"
+            ref={navRef}
+          >
+            <pre>
+              <span className={pageState === "about" ? "yellow" : ""}>
+                ╔═══════════════╗&nbsp;
+              </span>
+              <span className={pageState === "links" ? "yellow" : ""}>
+                ╔═══════════════╗&nbsp;
+              </span>
+              <span className={pageState === "skills" ? "yellow" : ""}>
+                ╔═══════════════╗&nbsp;
+              </span>
+              <span className={pageState === "projects" ? "yellow" : ""}>
+                ╔══════════════╗&nbsp;
+              </span>
+              <span className={pageState === "other" ? "yellow" : ""}>
+                ╔══════════════╗
+              </span>
             </pre>
-
-            <p className="my-1">&nbsp;</p>
-
-            <p className="text-center blue break-words">
-              Welcome to my portfolio.
-            </p>
-            <p className="text-center break-words">
-              Click on a section above to get started.
-            </p>
-
-            <p className="my-1">&nbsp;</p>
-
-            <pre className="whitespace-pre-wrap break-all">
-              {`╚══════════════════════════════════════════════════════════════════════╝`}
+            <div>
+              <span
+                onClick={() => {
+                  setPageState("about");
+                }}
+                className={`pointer ${pageState === "about" ? "yellow" : ""}`}
+              >
+                ║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;║
+              </span>
+              &nbsp;
+              <span
+                onClick={() => {
+                  setPageState("links");
+                }}
+                className={`pointer ${pageState === "links" ? "yellow" : ""}`}
+              >
+                ║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Links&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;║
+              </span>
+              &nbsp;
+              <span
+                onClick={() => {
+                  setPageState("skills");
+                }}
+                className={`pointer ${pageState === "skills" ? "yellow" : ""}`}
+              >
+                ║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skills&nbsp;&nbsp;&nbsp;&nbsp;║
+              </span>
+              &nbsp;
+              <span
+                onClick={() => {
+                  setPageState("projects");
+                }}
+                className={`pointer ${pageState === "projects" ? "yellow" : ""}`}
+              >
+                ║&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;║
+              </span>
+              &nbsp;
+              <span
+                onClick={() => {
+                  setPageState("other");
+                }}
+                className={`pointer ${pageState === "other" ? "yellow" : ""}`}
+              >
+                ║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MaaS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;║
+              </span>
+            </div>
+            <pre>
+              <span className={pageState === "about" ? "yellow" : ""}>
+                ╚═══════════════╝&nbsp;
+              </span>
+              <span className={pageState === "links" ? "yellow" : ""}>
+                ╚═══════════════╝&nbsp;
+              </span>
+              <span className={pageState === "skills" ? "yellow" : ""}>
+                ╚═══════════════╝&nbsp;
+              </span>
+              <span className={pageState === "projects" ? "yellow" : ""}>
+                ╚══════════════╝&nbsp;
+              </span>
+              <span className={pageState === "other" ? "yellow" : ""}>
+                ╚══════════════╝
+              </span>
             </pre>
           </div>
-        )}
-        <p className="text-center mt-10 l-black">
-          ═══════════════════════════════════════════════════════════════════════════════════════════════════
-        </p>
-        <p className="l-black self-start mb-10">2026 © MYNA VU</p>
+          {pageState === "about" && <About />}
+          {pageState === "links" && <Links />}
+          {pageState === "projects" && <Projects />}
+          {pageState === "skills" && <Skills />}
+          {pageState === "other" && <Other />}
+          {pageState === null && (
+            <div className="flex flex-col items-center fade4">
+              <pre className="whitespace-pre-wrap break-all">
+                {`╔══════════════════════════════════════════════════════════════════════╗`}
+              </pre>
+
+              <p className="my-1">&nbsp;</p>
+
+              <p className="text-center blue break-words">
+                Welcome to my portfolio.
+              </p>
+              <p className="text-center break-words">
+                Click on a section above to get started.
+              </p>
+
+              <p className="my-1">&nbsp;</p>
+
+              <pre className="whitespace-pre-wrap break-all">
+                {`╚══════════════════════════════════════════════════════════════════════╝`}
+              </pre>
+            </div>
+          )}
+          <p className="text-center mt-10 l-black">
+            ═══════════════════════════════════════════════════════════════════════════════════════════════════
+          </p>
+          <p className="l-black self-start mb-10">2026 © MYNA VU</p>
+        </div>
       </div>
     </>
   );
