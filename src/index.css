@@ -6,7 +6,7 @@ body {
 
 body,
 html {
-  font-family: monospace;
+  font-family: monospace, helvetica;
 
   color: white;
   font-weight: 800;
