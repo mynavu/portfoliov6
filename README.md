@@ -11,7 +11,7 @@ Welcome to my latest developer portfolio! This features a terminal theme with sh
 ## Tech Stack
 
 - **Frontend:** React, Tailwind CSS
-- **Graphics / UI:** Shader-based backgrounds, modern UI components
+- **Graphics / UI:** Shader-based backgrounds (from shader.com), modern UI components
 - **Tooling:** Vite, npm
 
 ## Getting Started
@@ -24,3 +24,10 @@ cd your-portfolio
 npm install
 npm run dev
 ```
+
+## Credits
+
+- Ascii art inspo:
+  - Owl on tree by ejm98
+  - Duck by Hayley Jane Wakenshaw
+  - Stick figure by StoneStoryRPG

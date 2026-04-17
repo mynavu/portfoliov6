@@ -64,7 +64,7 @@ Humor: <span class="blue">░░▒▒▓▓ 10% <span class="red"> ⚠︎ Low <
       </p>
       <div ref={contentRef1} className="banner"></div>
       <br />
-      <p className="text-center font-thin">&nbsp;{roles[hat % hats.length]}</p>
+      <p className="text-center -thin">&nbsp;{roles[hat % hats.length]}</p>
       <div ref={contentRef2} className="banner"></div>
       <pre>
         {`╚══════════════════════════════════════════════════════════════════════╝`}

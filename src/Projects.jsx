@@ -14,6 +14,20 @@ export const Projects = () => {
           <span class="blue">◆ Paused</span> <span class="red">◆ Archived</span>
         </p>
         <p>&nbsp;</p>
+        <a href="https://info-page-eight.vercel.app/" target="_blank">
+          <span class="yellow group">
+            <span className="group-hover:hidden">⬦</span>
+            <span className="hidden group-hover:inline">⬥</span> Yield
+            Information Page
+          </span>{" "}
+          - React, TypeScript, Node.js, Wagmi, Reown AppKit
+        </a>
+        <p className="font-thin">
+          ↳ Informs the aggregated yields (supply and borrow APYs) of USDT,
+          USDC, BTC, ETH, and SOL coins from the DeFi sites (AAVE, Kamino,
+          Compound, Spark) with the highest yields in the market.
+        </p>
+        <p>&nbsp;</p>
         <a
           href="https://chromewebstore.google.com/detail/ai-bro-ai-summaries-and-a/nkknmlgpnldkifjejcmhllffgmkjpnbo"
           target="_blank"
